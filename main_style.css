@@ -1,0 +1,201 @@
+* {
+	font-family: Arial, Verdana, sans-serif;
+	color: #665544;
+	text-align: center;}
+h1 {
+	background-color: #ffffff;
+	background-color: hsla(0,100%,100%,0.5);
+	color: #64645A;
+	padding: inherit;}
+body {
+	background-color: silver;
+	width: 90%;
+	margin: 0 auto;}
+li {
+	position: relative;
+    display: inline-block;
+    font-size: 17px;
+    text-decoration: none;
+    color: #9c9c9c;
+    margin-right: 35px;
+    padding: 10px 20px;
+    border: 1px solid #9c9c9c;
+    transition: all .2s linear;
+	}
+	a {
+		text-decoration: none;
+	}
+h2 {
+	font-size: 45px;
+    color: #a28989;
+    text-decoration: underline;
+}
+#header {
+	display: block;
+}
+			#content {
+				overflow: auto;}
+			#nav, #feature, #footer {
+				margin: 1%;}
+			.column1, .column2, .column3 {
+				width: 31.3%;
+				float: left;
+				margin: 1%;}
+.column1 {
+	background-image: url("imgs/1.png");
+	background-size: cover;
+}
+.column2 {
+	background-image: url("imgs/2.jpg");
+	background-size: cover;
+}
+			.column3 {
+				margin-right: 0%;}
+			li {
+				display: inline;
+				padding: 0.5em;}
+			#nav, #footer {
+				background-color: #efefef;
+				padding: 0.5em 0;}
+			#feature, .article {
+				height: 10em;
+				margin-bottom: 1em;
+				background-color: #efefef;}
+.contacts p {
+    color: grey;
+padding: 0;}
+p {
+	font-size: 19px;
+    color: grey;
+    line-height: 30px;
+    padding-right: 60px;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+form input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid grey;
+    background-color: transparent;
+    transition: all .2s linear;
+    outline: none;
+    color: grey;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+textarea {
+    overflow: auto;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+ 
+ 
+/*****************************************************************************************************************************************************/
+ 
+ * {margin: 0; padding: 0; box-sizing: border-box; /*font-family: 'Raleway', sans-serif*/ font-family: 'Droid Sans', sans-serif }
+body {visibility: hidden; opacity: 0; animation: appear 1.5s forwards; background-color: #ececec}
+@keyframes appear {
+	0% {visibility: hidden; opacity: 0}
+	100% {visibility: visible; opacity: 1}
+}
+/***********************************************       HEADER       ************************************************/
+header {position: absolute; display: inline-block; width: 100%; margin-top: 50px; z-index: 100}
+
+.logo-container {display: inline-block; position: relative;	float: left; margin-left: 50px}
+.logo-container img {width: 80px; height: 80px}
+.shrinked-logo {width: 58px !important; height: 58px !important}
+.nav {display: inline-block; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+	margin-right: 3%} 
+.nav a {position: relative; display: inline-block;  font-size: 17px; text-decoration: none; color: #9c9c9c; margin-right: 35px; padding: 10px 20px; border: 1px solid #9c9c9c; transition: all .2s linear}
+.nav a:last-child {margin-right: 0}
+.nav a:after {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 103%; transition: all .2s linear; z-index: -1}
+.nav a:hover:after {width: 100%; background-color: #cac9c9}
+.nav a:hover {color: black}
+
+
+
+section {display: inline-block; position: relative; width: 100%; min-height: 100vh; margin: 0 !important }
+
+/***********************************************        HOME        ************************************************/
+#home div {position: absolute; display: inline-block; left: 50%; top: 58%; transform: translate(-50%,-50%); bottom: 0; width: 715px}
+#home div p {font-size: 50px; color: #9a9898; }
+.colored-text {color: #a28989; font-size: 30px }
+.colored-text:first-child {position: relative; top: 10px;}
+.colored-text:last-child {position: relative; bottom: 20px;}
+.underlined-text {position: relative; background-color: white; color: #9a9898}
+
+
+
+/*************************************************      ABOUT     *************************************************/
+.section-heading {height: 100%}
+.section-heading h1 {margin-left: 25%; margin-top: 70px; font-size: 45px; color: #a28989; text-decoration: underline;}
+
+
+.info {margin: 0;  margin-top: 70px}
+.info p {font-size: 19px; color: grey; line-height: 30px; padding-right: 60px}
+.img-container img {margin-left: 15%; width: 100px; height: 130px; border-radius: 5px; box-shadow: 0px 0px 10px black}
+
+
+/**************************************     WORK     *************************************************/
+#work .section-heading h1 {margin: 0; margin-left: 100px; margin-top: 70px;}
+.work-container {position: relative; border: 1px solid lightgrey; width: 25%; height: 300px; background-repeat: no-repeat;  background-size: 200% 100%; background-position: top center; transition: all .2s linear; cursor: pointer;}
+.work-container:first-child {margin: 0 6.25%}
+.work-container:last-child {margin: 0 6.25%}
+.work-container:hover {background-size: 230% 110%}
+.work-container:before {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 0%; background-color: rgba(20,20,20,.7); transition: all .2s linear}
+.work-container:hover:before {width: 100%; height: 100%; top: 0}
+.hover-appear-text {position: absolute; top: 15%; left: 15%; transition: all .2s linear; font-size: 30px; opacity: 0; color: white}
+.about-job {position: absolute; top: 45%; left: 18%; transition: all .2s linear; transition-delay: 0.3s; font-size: 18px; opacity: 0; color: white}
+.work-container:hover .hover-appear-text {transform: translateY(20px); opacity: 1}
+.work-container:hover .about-job {transform: translateY(-20px); opacity: 1}
+
+.istaff {background-image: url('../pics/istaff.png')}
+.math {background-image: url('../pics/math-expert1.png')}
+.sally {background-image: url('../pics/sally1.png')}
+
+/*************************************************      CONTACT     *************************************************/
+#contact .section-heading {width: 100%}
+#contact .section-heading h1 {margin: 0; margin-left: 100px; margin-top: 70px;}
+
+
+.contact-text {margin: 0 auto; width: 75%; text-align: left}
+.contact-text p {color: grey; padding: 0;}
+.email {text-decoration: none; color: #a28989}
+.email:hover {text-decoration: none; color: #a28989}
+.email:focus {text-decoration: none}
+.social {margin-top: 150px}
+.social a {position: relative; text-decoration: none; font-size: 25px; margin-right: 10%; text-transform: uppercase; color: #a28989; text-shadow: 0px 0px 10px grey}
+.social a:last-child {margin-right: 0}
+.social a:before {content: ''; position: absolute; left: 50%; top: 50%; transform: translateY(-2px); height: 3px; width: 0%; background-color: #a28989; transition: all .1s linear}
+.social a:hover:before {width: 50%; left: 0}
+.social a:after {content: ''; position: absolute; left: 50%; top: 50%; transform: translateY(-2px); height: 3px; width: 0%; background-color: #a28989; transition: all .1s linear}
+.social a:hover:after {width: 50%; right: 0}
+
+
+.msg-container {position: relative; display: block; width: 70%; margin: 0 auto; text-align: center; transition: all 1s linear}
+.msg-me {position: relative; display: block; margin: 0 auto; background-color: transparent; font-size: 19px; text-transform: uppercase; outline: none; border: 0px; color: grey}
+form {display: inline-block; margin: 0 auto; transition: all .2s linear; transform: translateY(20px)}
+form input {width: 100%; height: 45px; border: 1px solid grey; background-color: transparent; transition: all .2s linear; outline: none; color: grey; margin-bottom: 10px; font-size: 16px; padding: 0 10px}
+form textarea {width: 100%; max-width: 100%; min-height: 160px; max-height: 160px; border: 1px solid grey; background-color: transparent; transition: all .2s linear; outline: none; font-size: 16px; padding: 10px 10px; resize: none; color: grey}
+form input:focus, form textarea:focus {box-shadow: 1px 5px 10px black}
+input[name="submit"] {width: 100%; height: 45px; margin-top: 20px; box-shadow: 1px 5px 10px black}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: grey;
+}
+.required {text-align: left; margin-top: 5px; color: grey}
+
+.hide {box-shadow: 0px 5px 10px black}
+
+
+
+.up-arrow {position: fixed; visibility: hidden; opacity: 0; right: 10px; bottom: 5px; width: 40px; transition: all .2s linear}
+.arrow-appear {visibility: visible; opacity: 1; transform: translateY(-20px);}
