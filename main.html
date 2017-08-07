@@ -3,59 +3,80 @@
 	<head>
 		<title>Main page</title>
 		<link type="text/css" rel="stylesheet" href="main_style.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
 		<script src="javascript.js" type="text/javascript"></script>
 		</head>
 	<body>
-		<div id="header">
-			<h1></h1>
-			<div id="nav">
-				<ul>
-					<li><a href="#habout">About</a></li>
-					<li><a href="#hwork">Work</a></li>
-					<li><a href="#hcontacts">Contacts</a></li>
-				</ul>
+		<header>
+			<div class="nav">
+				<a href="#habout">About</a>
+				<a href="#hwork">Work</a>
+				<a href="#hcontacts">Contacts</a>
 			</div>
+		<header>
+		
+		<div id="home">
+			<p>Welcome</p>
 		</div>
-		<div id="content">
-			<div id="about">
+		
 				<h2 id="habout">About</h2>
-				<p></p>
+			<div id="about">
+				<p>Smth about me</p>
+			</div>
 				<h2 id="hwork">Work</h2>
 			</div>
-			<a href="14/pr_tables_forms.html" target="_blank" title="Tables and forms">
-			<div class="article column1">
-				<p>Tables and forms</p>
+			<div id="content" class="row">
+			<a href="14/pr_tables_forms.html">
+			<div class="col-md-4 col-sm-4 work-container tables article column1">
+				<span class="hover-appear-text">Tables and forms</span>
+				<span class="about-job">Form+table style</span>
 			</div></a>
-			<a href="15/pr_maket.html" target="_blank" title="Layout">
-			<div class="article column2">
-				<p>Layout</p>
+			<a href="15/pr_maket.html">
+			<div class="col-md-4 col-sm-4 work-container layout article column2">
+				<span class="hover-appear-text">Layout</span>
+				<span class="about-job">Veloheld company</span>
 			</div></a>
-			<div class="article column3">
-				<p></p>
-			</div>
+			<a href="16/pr_photos.html">
+			<div class="col-md-4 col-sm-4 work-container photos article column3">
+				<span class="hover-appear-text">Photos</span>
+				<span class="about-job">Flowers main page</span>
+			</div></a>
 		</div>
-		<div class="contacts">
 		<h2 id="hcontacts">Contacts</h2>
-		<p>If you have any questions, or if you are interested in 
-		working together, feel free to contact me. In case of projects 
-		you would like to be discussed please fill out the form on 
-		the right or just email me: me.more@mail.ru, and I will get back 
-		to you as soon as possible.<p>
-		</div>
-		<div class="msg-container">
-			<p class="msg-me">Drop me a line</p>
-			<form class="msg-form">
-				<input type="text" name="name" placeholder="Name*">
-				<input type="text" name="company" placeholder="Company*">
-				<input type="email" name="email" placeholder="Email address*">
-				<textarea name="message" placeholder="Message*"></textarea>
-				<input type="submit" name="submit" value="Send">
-				<p class="required">required fields*</p>
-			</form>	
+					<div class="info" style="text-align: center;">
+				<div class="contact-text col1">
+					<p>If you have any questions, or if you are interested
+					in working together, feel free to contact me. 
+					In case of projects you would like to be discussed 
+					please fill out the form on the right or just 
+					email me:  <a href="mailto:me.more@mail.ru" class="email">
+					me.more@mail.ru</a>, and I will get back to you as
+					soon as possible.</p>
 				</div>
+				</div>	
+			<div class="col2">
+				<div class="msg-container">
+					<p class="msg-me">Drop me a line</p>
+					<form class="msg-form">
+						<input type="text" name="name" placeholder="Name*">
+						<input type="text" name="company" placeholder="Company*">
+						<input type="email" name="email" placeholder="Email address*">
+						<textarea name="message" placeholder="Message*"></textarea>
+						<input type="submit" name="submit" value="Send">
+						<p class="required">required fields*</p>
+					</form>	
+				</div>
+			
+			<div class="social">
+					<a href="" target="_blank">Twitter</a>
+					<a href="" target="_blank">Facebook</a>
+					<a href="" target="_blank">Linkedin</a>
 			</div>
-		<div id="footer">
-			<p>&copy; Copywrite 2017</p>
 		</div>
+		<!-- <div id="footer">
+			<p>&copy; Copywrite 2017</p>
+		</div> -->
+		<a href="#home"><img src="imgs/up-arrow.png" class="up-arrow"></a>
 	</body>
 </html>
