@@ -48,7 +48,7 @@ section {display: inline-block; position: relative; width: 100%; min-height: 100
 h2 {
 	font-size: 45px;
     color: #a28989;
-    text-decoration: underline;
+    text-decoration: none;
 	margin: 2.5%;}
 	
 /*#header {
@@ -61,7 +61,8 @@ h2 {
 				margin: 1%;}*/
 .column1, .column2, .column3 {
 	width: 30%;
-	float: left;}
+	float: left;
+	margin-bottom: 2.5%;}
 .column1 {
 	margin-left: 2.5%;
 	margin-right:2.5%;}
@@ -110,6 +111,8 @@ p {font-size: 19px; color: grey; line-height: 30px; padding-right: 60px}/*
 .tables {background-image: url("imgs/1.jpg")}
 .layout {background-image: url("imgs/2.jpg")}
 .photos {background-image: url("imgs/3.jpg")}
+.takeshi {background-image: url("imgs/4.jpg");
+	margin-left: 2.5%;}
 
 /*************************************************      CONTACT     *************************************************/
 #contact .section-heading {width: 100%}
