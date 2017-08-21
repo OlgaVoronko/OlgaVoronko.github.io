@@ -1,0 +1,37 @@
+*{
+	background-color: #9FD7B5;
+}
+#block {
+	height: 100%;
+	background: #649B87;
+	float: left;
+	border: 0.23% solid;
+	/*border: 0.23% 0.23% 0.23% 0.23%;*/
+	border-color: #5EB07F;
+	margin: 0px auto;
+}
+.paint {
+	margin: auto;
+}
+#cont {
+	/*position: static;*/
+	clear: both;
+}
+#square {
+	width: 400px;
+	height: 400px;
+}
+#space {width: 100%; height: 100%;}
+
+button {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+button:hover { background: rgb(53, 167, 110); }
+
