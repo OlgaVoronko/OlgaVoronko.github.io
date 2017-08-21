@@ -22,7 +22,7 @@ function defaultSpace(dot) {
 	}; 
 	
 	
-	$('div#block').mousemove(function(){
+	$('div#block').hover(function(){
         $(this).css('background-color','#F5BF83');
 	});
 }
